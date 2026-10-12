@@ -1,0 +1,21 @@
+{
+    "features": [
+        "cpu_mean",
+        "cpu_max",
+        "cpu_min",
+        "cpu_std",
+        "cpu_median",
+        "cpu_frequency_ghz",
+        "memory_util_gb",
+        "sda_write_count_during_interval",
+        "sda_read_count_during_interval"
+    ],
+    "target": "energy_util_during_interval_j",
+    "training_rows": 271950,
+    "testing_rows": 66900,
+    "training_files": 840,
+    "testing_files": 210,
+    "MAE_J": 3.937670874435136,
+    "RMSE_J": 12.920957055335942,
+    "R2": 0.6384004741056156
+}
