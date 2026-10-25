@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from backend.simulation_routes import router as simulation_router
 
 from backend.schemas import (
     WorkloadHistory,
@@ -24,6 +25,7 @@ app = FastAPI(
     ),
     version="1.0.0"
 )
+app.include_router(simulation_router)
 
 
 # =========================================

@@ -1,3 +1,5 @@
+import { Network } from "lucide-react";
+import SimulationPage from "./SimulationPage";
 import {
   useEffect,
   useState,
@@ -256,6 +258,17 @@ function App() {
             <Gauge size={18} />
             Dashboard
           </button>
+          <button
+            className={
+              activePage === "simulation"
+                ? "nav-item active"
+                : "nav-item"
+            }
+            onClick={() => setActivePage("simulation")}
+          >
+            <Network size={18} />
+            Data Center Simulator
+          </button>
 
 
           <button
@@ -356,6 +369,11 @@ function App() {
 
           </div>
 
+        )}
+        {/* DATA CENTER SIMULATOR */}
+
+        {activePage === "simulation" && (
+          <SimulationPage />
         )}
 
 
