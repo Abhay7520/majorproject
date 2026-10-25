@@ -4,6 +4,8 @@ venv/
 env/
 __pycache__/
 *.pyc
+echo .venv/ > .gitignore
+
 
 # Node.js
 node_modules/
